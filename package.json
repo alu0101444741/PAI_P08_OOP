@@ -1,5 +1,5 @@
 {
-  "name": "2021-2022_p08_oop",
+  "name": "p08_oop",
   "version": "1.0.0",
   "description": "PAI Lab assignment #08",
   "devDependencies": {
@@ -8,9 +8,19 @@
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.25",
     "babel-jest": "^27.5.1",
+    "chai": "latest",
+    "commander": "^7.1.0",
     "core-js": "^3.21.1",
-    "eslint": "^8.9.0",
-    "jest": "^27.5.1"
+    "escodegen": "^1.14.3",
+    "eslint": "^8.11.0",
+    "eslint-config-google": "^0.14.0",
+    "espree": "^9.3.1",
+    "express": "^4.17.1",
+    "jest": "^27.5.1",
+    "jison": "latest",
+    "jsdoc": "^3.6.10",
+    "jsdoc-to-markdown": "^7.1.1",
+    "nyc": "latest"
   },
   "main": "index.js",
   "scripts": {
@@ -29,7 +39,7 @@
     "JSON",
     "Modules"
   ],
-  "author": "F. de Sande",
+  "author": "Roberto Carrazana Pernía",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ULL-ESIT-PAI-2021-2022/-2021-2022-PAI-P08-OOP/issues"
