@@ -24,7 +24,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "badtest": "jest --verbose",
     "watch": "jest --watchAll --verbose",
     "coverage": "jest --coverage --verbose"
   },
@@ -36,13 +37,13 @@
     "PAI",
     "Javascript",
     "Lab",
-    "JSON",
-    "Modules"
+    "OOP"
   ],
   "author": "Roberto Carrazana Pernía",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ULL-ESIT-PAI-2021-2022/-2021-2022-PAI-P08-OOP/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-PAI-2021-2022/-2021-2022-PAI-P08-OOP#readme"
+  "homepage": "https://github.com/ULL-ESIT-PAI-2021-2022/-2021-2022-PAI-P08-OOP#readme",
+  "type": "module"
 }
