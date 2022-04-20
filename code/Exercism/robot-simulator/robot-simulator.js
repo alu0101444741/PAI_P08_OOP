@@ -41,7 +41,7 @@ export class Robot {
 
   /**
   * @desc Getter para las coordenadas.
-  * @return {Number[2]} array de tamaño dos con las coordenadas x e y del robot
+  * @return {Number[]} array de tamaño dos con las coordenadas x e y del robot
   */
   get coordinates() {
     return([this.x, this.y]);

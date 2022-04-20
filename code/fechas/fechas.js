@@ -36,7 +36,7 @@ function main() {
 /**
  * @desc Convierte una fecha en un array con la información de la misma.
  * @param {String} date - cadena con formato dd/mm/aa 
- * @return {Number[3]} array con contenido [día, mes, año] 
+ * @return {Number[]} array con contenido [día, mes, año] 
  */
   function convertDate(date) {
     let dateNumbers = date.split('/');

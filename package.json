@@ -27,7 +27,20 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "badtest": "jest --verbose",
     "watch": "jest --watchAll --verbose",
-    "coverage": "jest --coverage --verbose"
+    "coverage": "jest --coverage --verbose",
+    "start": "node web-server/app.js"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage",
+    "collectCoverageFrom": [
+      "./code/*/test/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90
+      }
+    }
   },
   "repository": {
     "type": "git",
