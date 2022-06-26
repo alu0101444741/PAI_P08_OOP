@@ -21,7 +21,7 @@ export class Vector2D {
   * @param {Number} pointX - coordenada
   * @param {Number} pointY - 
   */
-   constructor(pointX = 0, pointY = 0) {
+  constructor(pointX = 0, pointY = 0) {
     let x = Number(pointX);
     let y = Number(pointY);
     if ((Number.isNaN(x)) || (Number.isNaN(y))) {
@@ -36,7 +36,7 @@ export class Vector2D {
   * @param {Vector2D} otherVector - instancia de la clase Vector2D
   * @return {Vector2D} instancia de la clase Vector2D con la suma resultante.
   */
-   add (otherVector) {
+   add(otherVector) {
     if (!otherVector instanceof Vector2D) {
       throw new Error('No se ha proporcionado un objeto de la clase Vector2D.');
     }
@@ -48,7 +48,7 @@ export class Vector2D {
   * @param {Number} number - número real
   * @return {Vector2D} instancia de la clase Vector2D con la multiplicación resultante.
   */
-  multiplyByNumber (number) {
+  multiplyByNumber(number) {
     let theNumber = Number(number);
     if (Number.isNaN(theNumber)) {
       throw new Error('No se ha proporcionado un número.');
@@ -61,7 +61,7 @@ export class Vector2D {
   * @param {Vector2D} otherVector - instancia de la clase Vector2D
   * @return {Number} multiplicación resultante.
   */
-  productOfTwoVectors (otherVector) {
+  productOfTwoVectors(otherVector) {
     if (!otherVector instanceof Vector2D) {
       throw new Error('No se ha proporcionado un objeto de la clase Vector2D.');
     }
@@ -72,7 +72,7 @@ export class Vector2D {
   * @desc Método para calcular el módulo del vector.
   * @return {Number} multiplicación resultante.
   */
-  module () {
+  module() {
     return(Math.sqrt(Math.pow(this.#coordinateX,2) + Math.pow(this.#coordinateY,2)));
   }
 
@@ -81,7 +81,7 @@ export class Vector2D {
   * @param {Vector2D} otherVector - instancia de la clase Vector2D
   * @return {Number} grados del ángulo formado.
   */
-  angle (otherVector) {
+  angle(otherVector) {
     if (!otherVector instanceof Vector2D) {
       throw new Error('No se ha proporcionado un objeto de la clase Vector2D.');
     }

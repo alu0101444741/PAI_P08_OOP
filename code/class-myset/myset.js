@@ -9,10 +9,10 @@
  * @desc Clase MySet
  * @module myset
  */
+
  'use static';
- /**
- * @desc Clase MySet
- */
+
+ /** @desc Clase MySet */
 export class MySet {
   #collection;
   /**
@@ -20,7 +20,7 @@ export class MySet {
   * @param {Number[]} numbers - array de números naturales
   */
   constructor(numbers = []) {
-    this.#collection = [];
+    this.#collection = [];    
     for (const number of numbers) {
       this.add(number);
     }    
@@ -30,7 +30,7 @@ export class MySet {
    * @desc Método para añadir un nuevo elemento al conjunto
    * @param newNumber - número natural
    */
-  add (newNumber) {
+  add(newNumber) {
     let number = Number(newNumber);
     this.#isNaturalNumber(number);
     if (!this.#collection.includes(number)) {
@@ -43,7 +43,7 @@ export class MySet {
    * @param otherSet - instancia de la clase MySet
    * @return {MySet} instancia de la clase MySet con la unión de ambos conjuntos
    */
-  union (otherSet) {    
+  union(otherSet) {    
     if (!otherSet instanceof MySet) {
       throw new Error('No se ha proporcionado un objeto de la clase MySet.');
     }
@@ -58,7 +58,7 @@ export class MySet {
    * @param otherSet - instancia de la clase MySet
    * @return {MySet} instancia de la clase MySet con la intersección de ambos conjuntos
    */
-  intersection (otherSet) {    
+  intersection(otherSet) {    
     if (!otherSet instanceof MySet) {
       throw new Error('No se ha proporcionado un objeto de la clase MySet.');
     }
@@ -76,7 +76,7 @@ export class MySet {
    * @param otherSet - instancia de la clase MySet
    * @return {MySet} instancia de la clase MySet con el complemento relativo de ambos conjuntos
    */
-   difference (otherSet) {    
+   difference(otherSet) {    
     if (!otherSet instanceof MySet) {
       throw new Error('No se ha proporcionado un objeto de la clase MySet.');
     }
@@ -94,7 +94,7 @@ export class MySet {
    * @param otherSet - instancia de la clase MySet
    * @return {true | false} true si es subconjunto
    */
-  subset (otherSet) {    
+  subset(otherSet) {    
     if (!otherSet instanceof MySet) {
       throw new Error('No se ha proporcionado un objeto de la clase MySet.');
     }
@@ -116,7 +116,7 @@ export class MySet {
    * @param otherSet - instancia de la clase MySet
    * @return {true | false} true si son disjuntos
    */
-   disjoint (otherSet) {
+   disjoint(otherSet) {
     if (!otherSet instanceof MySet) {
       throw new Error('No se ha proporcionado un objeto de la clase MySet.');
     }    
@@ -133,7 +133,7 @@ export class MySet {
    * @param otherSet - instancia de la clase MySet
    * @return {true | false} true si son iguales
    */
-  eql (otherSet) {
+  eql(otherSet) {
     if (!otherSet instanceof MySet) {
       throw new Error('No se ha proporcionado un objeto de la clase MySet.');
     }
@@ -155,7 +155,7 @@ export class MySet {
    * @param theNumber - número natural
    * @return {true | false} true si el número pertenece
    */
-  contains (number) {
+  contains(number) {
     let theNumber = Number(number);
     this.#isNaturalNumber(theNumber);
     if (!this.#collection.includes(theNumber)) {

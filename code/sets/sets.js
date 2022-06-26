@@ -11,6 +11,9 @@
 'use strict';
 import { MySet } from '../class-myset/myset.js';
 import { fileURLToPath } from 'url';
+/**
+ * @desc Función main
+ */
 function main() {
   const mySet1 = new MySet();
   mySet1.add(1); console.log(mySet1.toString());

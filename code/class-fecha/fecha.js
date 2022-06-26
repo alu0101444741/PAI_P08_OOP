@@ -9,11 +9,10 @@
  * @desc Clase Fecha
  * @module fecha
  */
+
  'use static';
 
- /**
- * @desc Clase Fecha
- */
+ /** @desc Clase Fecha */
 export class Fecha {
   #day;
   #month;
@@ -29,11 +28,9 @@ export class Fecha {
     if (!this.#isValidDate(day, month, year)) {
       throw new Error('La fecha proporcionada no es válida');
     }
-    else {
-      this.#day = day;
-      this.#month = month;
-      this.#year = year;
-    }
+    this.#day = day;
+    this.#month = month;
+    this.#year = year;    
   }
 
   /**
